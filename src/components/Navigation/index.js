@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Nav() {
+function Navigation() {
 
   return (
-    <header>
-    </header>
+      <nav>
+        *Hello I'm the Navigation, I live inside the Header
+      </nav> 
   );
 }
 
-export default Nav;
+export default Navigation;
