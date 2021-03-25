@@ -1,30 +1,29 @@
 import React from 'react';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
-function App() {
-  
-  
+const App = () => {
   return (
-    <div>
-      <Header></Header>
-      <Navigation></Navigation>    
-      <main>
-        <About></About>
-        <Portfolio></Portfolio>
-      
-        <Resume></Resume>
-        <Contact></Contact>
-      </main>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div className="app">
+        <Header />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/portfolio" component={Portfolio} />
+          </Switch>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

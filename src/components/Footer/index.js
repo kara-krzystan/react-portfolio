@@ -1,20 +1,35 @@
 import React from 'react';
+import { FaGithub, FaLinkedin, FaBehanceSquare, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <section>
-      <h1 id="footer">I'm a Footer</h1>
-
-      <ul>
-        <li><a href="mailto:kara.krzystan@gmail.com" target="_blank" rel="noreferrer">Email</a></li>
-        <li><a href="http://github.com/kara-krzystan" target="_blank" rel="noreferrer">Github</a></li>
-        <li><a href="http://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-        <li><a href="http://instagram.com/" target="_blank" rel="noreferrer">Instagram</a></li>
-        <li><a href="http://behance.net/" target="_blank" rel="noreferrer">Behance</a></li>
-      </ul>
-    </section>
-
+    <div className="footer-div">
+      <footer>
+        <ul>
+          <a href="https://github.com/kara-krzystan" target="blank">
+            <li>
+              <FaGithub />
+            </li>
+          </a>
+          <a href="https://www.linkedin.com" target="blank">
+            <li>
+              <FaLinkedin />
+            </li>
+          </a>
+          <a href="https://www.behance.net" target="blank">
+            <li>
+              <FaBehanceSquare />
+            </li>
+          </a>
+          <a href="https://www.instagram.com" target="blank">
+            <li>
+              <FaInstagram />
+            </li>
+          </a>
+        </ul>
+      </footer>
+    </div>
   );
-}
+};
 
 export default Footer;
