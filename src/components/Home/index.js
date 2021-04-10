@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import Portrait from "../../assets/images/profile_pic.jpg";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
       </div>
       <div className="portrait">
         <img
-          src={`${process.env.PUBLIC_URL}profile_pic.jpg`}
+          src={Portrait}
           alt="self portrait"
         />
       </div>

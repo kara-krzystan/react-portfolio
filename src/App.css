@@ -4,8 +4,8 @@
 
 main {
   margin: 0 auto;
-  /* max-width: 90%; */
-  padding: 10px 0;
+  max-width: 98%;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -113,10 +113,6 @@ header a {
   color: var(--dark);
 }
 
-nav li:hover {
-  font-style: italic;
-}
-
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -138,13 +134,14 @@ button[disabled] {
   opacity: 0.8;
 }
 .portfolio {
-  justify-content: center;
-  display: flex;
+  /* justify-content: center;
+  display: flex; */
+  margin: 10px auto;
 }
 
 .card {
-  padding: 20px 20px;
   align-items: center;
+  margin: 10px;
 }
 
 img {
@@ -175,6 +172,14 @@ li {
 
 nav a:hover {
   text-decoration: none;
+  color: black;
+  font-style: italic;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
 }
 
 nav li {
@@ -195,6 +200,9 @@ textarea {
   margin-right: auto;
 }
 
+.row {
+  margin: 0 auto;
+}
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +262,6 @@ textarea {
 }
 
 .card {
-  width: 25%;
   text-align: center;
 }
 
@@ -263,32 +270,6 @@ textarea {
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-}
-
-.modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1;
-}
-
-.modalContainer {
-  background: var(--darker);
-  border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
-  padding: 15px;
-  width: 960px;
-}
-
-.modalTitle {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
 }
 
 button {
