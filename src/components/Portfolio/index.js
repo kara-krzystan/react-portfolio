@@ -5,6 +5,7 @@ import PlaceHolderTwo from "../../assets/images/placeholder_2_600.jpg";
 import PlaceHolderThree from "../../assets/images/placeholder_3_600.jpg";
 import LookUp from "../../assets/images/LookUp-new.png";
 import MakeAppoint from "../../assets/images/make-a-point-app.png";
+import FinalProject from "../../assets/images/Final-Project.jpg";
 
 function Portfolio() {
   return (
@@ -52,15 +53,15 @@ function Portfolio() {
         <div class="col">
           <div class="card">
             <img
-              src={PlaceHolderTwo}
+              src={FinalProject}
               alt="Final Project"
               class="card-img-top"
             />
             <div class="card-body">
-              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+              <a href="https://github.com/kara-krzystan/final-final-v3" target="_blank" rel="noreferrer">
                 <button>GitHub</button>
               </a>
-              <a href="https://github.com/kara-krzystan" target="_blank" rel="noreferrer">
+              <a href="https://radiant-scrubland-03545.herokuapp.com/" target="_blank" rel="noreferrer">
                 <button>Website</button>
               </a>
             </div>
