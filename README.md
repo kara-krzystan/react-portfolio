@@ -2,7 +2,7 @@
 
 ## Description
 
-For this challenge, I was asked to create a portfolio of my web develpments project using React.  
+For this challenge, I was asked to create a portfolio of my web development projects using React.  
 *Placeholders are acceptable, as this site will be updated as the course progresses*
 
 ## User Story
